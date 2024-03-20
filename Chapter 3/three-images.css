@@ -1,0 +1,36 @@
+body { /* Defines the style for all the body elements. */
+	background-color: black;
+	color: white;
+}
+.column { /* To set the space between each image. */
+	flex: 30%;
+	padding: 25px;
+}
+img { /* To set width, height, and border of each image. */
+	width: 100%;
+	height: 75%;
+	border: 2px solid beige;
+	border-radius: 10px;
+}
+.container { /* Displays the content in a flexbox. */
+	display: flex;
+}
+h1 { /* Applies style to <h1>. */
+	text-align: center;
+	font-family: cursive;
+	margin: 10px;
+	padding-top: 30px;
+}
+h2 { /* Applies style to <h2>. */
+	text-align: center;
+	font-weight: 100;
+}
+#imageOne { /* Applies style to only imageOne using a CSS filter. */
+	filter: grayscale(50%);
+}
+#imageTwo { /* Applies style to only imageTwo using a CSS filter. */
+	filter: grayscale(25%);
+}
+#imageThree { /* Applies style to only imageThree using a CSS filter. */
+	filter: grayscale(35%);
+}

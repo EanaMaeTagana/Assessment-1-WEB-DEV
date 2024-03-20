@@ -1,0 +1,180 @@
+<!--- Chapter 2 - One-Page Website [Task] --->
+
+<!---
+Task:
+Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
+
+- An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find.
+- A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
+- A link to the actual website of the film/game etc. which opens in a new tab when clicked.
+- Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
+- At least two classes.
+- One link styled as a button.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="until-dawn.css" type="text/css">
+    <title>Until Dawn</title>
+</head>
+<body>
+    <header class="header"> <!-- A header is created to contain the title of the webpage and the nav bar. -->
+        <a href="#title" class="title">UNTIL DAWN</a> <!-- An href link to link the beginning of the page. -->
+        <nav class="navigation"> <!-- A nav tag used to define the start of the navigation. Also classed with 'navigation' for easier styling. -->
+            <ul> <!-- An unordered list to contain all the sections of the website. -->
+                <!-- Href links to link all the ids to their respective sections. -->
+                <li><a href="#plot">Plot</a></li> 
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul> <!-- List tag closed. -->
+        </nav> <!-- Navigation tag closed. -->
+    </header> <!-- Header tag closed. -->
+    <div class="container"> <!-- A new division classed as 'container' to contain all contents for easier styling. -->
+        <h2>ABOUT</h2>
+        <!-- A division is created ('about') to contain the key information about the game. -->
+        <div class="about"> 
+            <p>When eight friends are trapped on a remote mountain retreat and things quickly turn sinister, they start to suspect they aren’t alone.</p>
+            <p>Gripped by fear and with tensions in the group running high, you’ll be forced to make snap decisions that could mean life, or death, for everyone involved.</p>
+            <p>Every choice you make in your terrifying search for answers – even the seemingly trivial ones – will carve out your own unique story.</p>
+        </div>
+        <!-- Another division is created ('plot') to contain the information about the plot of the game. It also has an anchor id that is linked to the href in the nav bar. -->
+        <div class="plot" id="plot">
+            <h2>PLOT</h2>
+            <p>"Until Dawn" centers around a group of eight friends who reunite at a secluded mountain lodge for a weekend getaway. 
+                However, their plans for relaxation turn into a nightmare when they become trapped on the mountain and hunted by a masked killer. 
+                As the night unfolds, the group discovers chilling secrets about the lodge's dark past, including the disappearance of two of their friends, Hannah and Beth, a year earlier. 
+                Haunted by guilt and regret, the remaining friends must confront their fears and work together to survive the night. 
+                Throughout their harrowing ordeal, players control the fate of each character through a series of choices and quick-time events. 
+                These decisions not only shape the characters' relationships but also determine who lives and who dies as they struggle to outwit the relentless killer. 
+                As tensions rise and alliances are tested, the true nature of the threat stalking them is revealed, leading to a heart-pounding climax where every decision counts. 
+                Only by making the right choices can players hope to see the survivors make it through until dawn and escape the mountain alive.</p>
+        </div>
+        <!-- Another division is created ('characters') to contain the information about the characters of the game. It also has an anchor id that is linked to the href in the nav bar. -->
+        <div class="characters" id="characters">
+            <h2>CHARACTERS</h2>
+            <!-- Various divisions are created with the same class ('characterBio') to have the same styling throughout. -->
+            <div class="characterBio">
+                <strong>Samantha "Sam" Giddings</strong> <!-- The tag <strong> is used to emphasise the character's name. -->
+                <p class="quote"> <!-- A <p> tag that is classed to have the same styling throughout. -->
+                    "You need to listen to me, I don't care if you believe me or not. Doesn't matter, because you will."
+                </p>
+                <p>
+                    Diligent, considerate, and adventurous, Sam embodies levelheadedness in her group. 
+                    She avoids conflict, caring deeply for animals. As Hannah's best friend, she tries to warn her about a prank, but is ignored. 
+                    Afterward, she supports Hannah's brother, Josh.
+                </p>
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Joshua "Josh" Washington</strong>
+                <p class="quote">
+                    "Oh come, come-come-come-come. Why the long faces? Come on! It's good to get the heart racing every now and then, right?"
+                </p>
+                <p>
+                    Josh, 20, a college dropout, is thoughtful and complex. 
+                    As Hannah and Beth Washington's older brother, he's the group's joker. 
+                    Guilty over his sisters' fate after a drunken prank, he later invites friends to honor their memory at the family lodge on the anniversary of their disappearance.
+                </p>
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Emily "Em" Davis</strong>
+                <p class="quote">
+                    "Rule number one, 'Emily is always right.' Rule number two, 'Nothing else matters because Emily is always right."
+                </p>
+                <p>
+                    A college student with a perfect GPA known for her intelligence, resourcefulness, and sharp tongue. 
+                    She values appearance and high-end fashion, often demanding the best. Despite her flaws, she was involved in the prank against Hannah. 
+                    After splitting with Mike, she starts dating Matt.
+                </p>
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Matthew "Matt" Taylor</strong>
+                <p class="quote">
+                    "I'm not all muscle. There are some brains in here, too!"
+                </p>
+                <p>
+                    A high school linebacker, Matt is motivated, ambitious, and athletic. 
+                    While generally nice, he can seem like a pushover. He prioritizes his athleticism over intelligence. 
+                    He filmed the prank against Hannah but didn't share it. He dates Emily after her breakup, but their relationship seems one-sided.
+                </p>
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Jessica "Jess" Riley</strong>
+                <p class="quote">
+                    "Who needs grades when you've got all the natural advantages you can handle?"
+                </p>
+                <p>
+                    Jess, 18, a former homecoming queen, is confident, trusting, and irreverent. 
+                    She's mischievous, fun-loving, and flirty, valuing her appearance highly and getting feisty when challenged. 
+                    She orchestrated the prank on Hannah, citing it as protection for her friend Emily. Ironically, she's now with Mike, Emily's ex.
+                </p>
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Michael "Mike" Munroe</strong>
+                <p class="quote">
+                    "Come on guys, we're all friends here, right? No need for violence, just a little harmless fun! 
+                    We're up in the woods! It's spooky! Come on, let's get into the spirit of things!"
+                </p>
+                <p>
+                    Mike, a former class president, is known for his intelligence, determination, and charisma. 
+                    He's a go-getter, always diving into challenges headfirst. Despite his charm, he's not immune to mistakes; he willingly takes part in the prank on Hannah. 
+                    After breaking up with Emily, he dates Jessica.
+                </p>       
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Ashley "Ash" Brown</strong>
+                <p class="quote">
+                    "You were looking on your phone, you dip! What are you tweeting!? 
+                    Hashtag there's a freaking ghost after us?!"
+                </p>
+                <p>
+                    Ashley, a bookworm, is academic, curious, and forthright. Often in the library, she's eager to learn. 
+                    Despite her intelligence, her imagination can easily scare her. 
+                    Though she played a minor role in the prank, she's usually the one investigating. Ashley crushes on Chris but doubts his feelings.
+                </p>       
+            </div> <!-- End of one character's key information division. -->
+            <div class="characterBio">
+                <strong>Christopher "Chris" Hartley</strong>
+                <p class="quote">
+                    "Boom! Butterfly effect."
+                </p>
+                <p>
+                    As a tech geek, Chris is methodical, protective, and humorous. He's the calmest in the group, often cracking jokes to lighten the mood. 
+                    Best friends with Josh since grade school, he missed the prank on Hannah because he was drunk and asleep like Josh. 
+                    Despite crushing on Ashley, he's too scared to advance their relationship.
+                </p>       
+            </div>
+        </div> <!-- End of the contents about the characters. -->
+        <!-- Another division is created ('reviews') to contain reviews about the game. It also has an anchor id that is linked to the href in the nav bar. -->
+        <div class="reviews" id="reviews">
+            <h2>REVIEWS</h2>
+            <!-- Similarly to the character div, various divisions are created with the same class ('review') to have the same styling throughout. -->
+            <div class="review">
+                <p>
+                <strong>★★★★★ Tom Ruess</strong>: I enjoyed this game far more than I expected to! It’s very addictive and once I started I pretty much couldn’t put it down until I was done my first play through. I liked it so much I even rushed to the store after finishing to pick up ‘The Quarry’ for PS5 (this game’s sequel). 
+                </p>       
+            </div> <!-- End of one review division. -->
+            <hr> <!-- To show a break between the reviews. -->
+            <div class="review">
+                <p>
+                <strong>★★★★★ Izzy Gardener</strong>: I played this earlier this year and still love it, I love that the different choices affect minor steps in the game as you have to think twice! I chose what I would of chose in the first game and saw what would happen and then played again trying the opposite, it’s so fun there’s so many endings and you can change so much! This game is super addicting seriously I’ve played it so many times now! I definitely recommend it to anyone who likes a spooky but fun and funny game. 
+                </p>       
+            </div> <!-- End of one review division. -->
+            <hr>
+            <div class="review">
+                <p>
+                <strong>★★★★★ Yves Roschlenova</strong>: Love story driven games, love horror, and absolutely love this game. It's like the choose your own adventure books I loved as a kid, manifested into a survival horror game that plays like an interactive movie. Outstanding. Have also played the first installment of The Dark Pictures Anthology, Man of Medan, will definitely be getting any and all games these guys release like this
+                </p>       
+            </div> <!-- End of one review division. -->
+            <hr>
+            <div class="review">
+                <p>
+                <strong>★★★★★ Laura Brearley</strong>: This game is so visually beautiful, has dynamic characters, and a fantastic story line. It is a truly amazing concept, which becomes more layered and complex each time I play. I highly recommend it.
+                </p>       
+            </div> <!-- End of one review division. -->
+        </div> <!-- To close the reviews division. -->
+        <a href="https://store.steampowered.com/app/2172010/Until_Dawn/" class="button">Buy on Steam</a> <!-- An href link that is styled as a button that when pressed links to the official steam page of the game. -->
+    </div> <!-- Container div is closed. -->
+</body>
+</html>

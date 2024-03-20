@@ -1,0 +1,130 @@
+<!-- Chapter 1 - Reference Guide [Bonus] -->
+
+<!--
+Bonus:
+Create a HTML & CSS quick-reference guide that covers all of the tags we've covered so far (and a few extras) with a description of how to use them and code examples.
+
+- Use an external stylesheet.
+- Be creative with your styling, but keep it professional.
+- Use the <code> and <pre> HTML tags to include code examples.
+- Include a minimum of 10 HTML tags.
+- Include a minimum of 8 CSS properties.
+- Include a variety of different headers.
+- Make sure the code is indented and spaced properly.
+-->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="reference-guide.css"type="text/css">
+    <title>Reference Guide</title>
+</head>
+<body>
+    <div class="container"> <!-- A division classed as 'container' is created to contain all contents. -->
+        <h1>HTML & CSS Elements Reference Guide</h1>
+        <div class="html"> <!-- A division classed as 'html' to contain the information about html. -->
+            <h2>HTML Elements</h2>
+            <!-- The &lt; and &gt; are used to display the tags without it executing the HTML function. -->
+            <!-- The <code> and <pre> tags are used to show the example of the code. They are styled by using the tag <strong> to emphasise the importance. -->
+            <p><code><strong><&lt;>!DOCTYPE&gt;</strong></code> - Used to define the type of document.</p>
+            <p><code><strong>&lt;html&gt;</strong></code> - Used to define that the document is HTML.</p>
+            <p><code><strong>&lt;head&gt;</strong></code> - Used to contain the metadata of the dcoument and webpage.</p>
+            <p><code><strong>&lt;title&gt;</strong></code> - Used to name the webpage.</p>
+            <p><code><strong>&lt;body&gt;</strong></code> - Used to contain the contents of the webpage.</p>
+            <p><code><strong>&lt;h1&gt; to &lt;h6&gt;</strong></code> - Used to create titles for specific sections.</p>
+            <p><code><strong>&lt;p&gt;</strong></code> - Used to insert a paragraph.</p>
+            <p><code><strong>&lt;div&gt;</strong></code> - Used to define a division or section within a webpage.</p>
+            <p><code><strong>&lt;ol&gt;</strong></code> - Used to define an ordered list, typically shown in numbers.</p>
+            <p><code><strong>&lt;ul&gt;</strong></code> - Used to define an unordered list, typically shown in bullet points.</p>
+        </div> <!-- The division is closed. -->
+        <div class="css"> <!-- Another division classed as 'css' to contain the information about css properties. -->
+            <h2>CSS Elements</h2>
+            <p>There are 3 ways to insert CSS: inline, internal, and external. </p>
+        <!-- Like with the html code snippets, the css properties are also shown within <pre>, <code>, and <strong> tags. -->
+        <p><strong>Inline Styling</strong> - Uses CSS properties within the HTML document.<pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+    
+            &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;
+            &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+                    
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre></p>
+        <p><strong>Internal Styling</strong> - Uses CSS properties within the HTML document. <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;style&gt;
+            body {
+                background-color: linen;
+            } 
+            h1 {
+                color: maroon;
+                margin-left: 40px;
+            }
+            &lt;/style&gt;
+            &lt;body&gt;
+            
+            &lt;h1&gt;This is a heading&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre></p>
+        <p><strong>External Styling</strong> - Uses CSS properties by linking a CSS document. <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;link rel="stylesheet" href="mystyle.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+
+            &lt;h1&gt;This is a heading&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre></p>
+        <p><strong>Color</strong> - Can be used to define the color of parts of various elements.<pre><code>
+            h1 {
+                color:DodgerBlue;
+            }
+            p {
+                color:Tomato;
+            }
+        </code></pre></p>
+        <p><strong>Margin</strong> - Used to create space around elements.<pre><code>
+            p {
+                margin: 100px 120px 120px 100px;
+            }
+        </code></pre></p>
+        <p><strong>Padding</strong> - Used to create space around an elements content and the border.<pre><code>
+            p {
+                padding: 50px 30px 50px 80px;
+            }
+        </code></pre></p>
+        <p><strong>Border</strong> - Used to define the border of an element.<pre><code>
+            p {
+                border: 20px 10px 10px 20px;
+            }
+        </code></pre></p>
+        <p><strong>Font</strong> - Used to define the font of the text.<pre><code>
+            p {
+                font-family: "Times New Roman", Times, serif;
+            }
+        </code></pre></p>
+        <p><strong>Align</strong> - Used to align the elements of a webpage.<pre><code>
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                border: 3px solid green;
+            }
+        </code></pre></p>
+        </div>
+    </div> <!-- The division is closed. -->
+</body>
+</html>

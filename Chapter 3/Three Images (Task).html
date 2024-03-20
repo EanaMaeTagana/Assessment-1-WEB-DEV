@@ -1,0 +1,46 @@
+<!--- Chapter 3 - Three Images [Task] --->
+
+<!---
+Task:
+In a new index.html file display three images (that you would be legally allowed to use for a commercial project) and do the following:
+
+- Select a theme which ties all three images together.
+- Give each image an appropriate alt attribute.
+- Give each image appropriate width and height attributes (retaining its original aspect ratio).
+- Give each image an appropriate title attribute.
+- Use CSS filters to change the appearance of all three of your images.
+- Ensure each image is under 300kb.
+- Underneath each image, provide information on its copyright license.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="three-images.css" type="text/css">
+    <title>Three Images</title>
+</head>  
+<body>
+	<!-- The theme that ties all images together is that they are all art. -->
+    <h1>“A work of art which isn’t based on feeling isn’t art at all.”</h1>
+	<div class="container"> <!-- A div to contain the three images alone. -->
+		<div class="column"> <!-- A div to define the columns of the images. -->
+            <h2>Flowers in a Metal Vase</h2>
+			<!-- The alt attribute is used for whenever a viewer cannot view an image. The alt attributes were used to the describe what the image displays. -->
+			<!-- Moreover, each image has an appropriate title attribute which whenever hovered over -- shows the title. -->
+			<img src="image-one.jpg" alt="Colorful flowers displayed in a metal vase." title="Flowers in a Metal Vase" id="imageOne"> <!-- Tag <img src> is used to locate the source of the image within the directory. -->
+			<p>by Abraham Mignon</p> <!-- A <p> tag to provide information on the owner of the artwork. -->
+		</div> <!-- Closes the division. -->
+		<div class="column"> <!-- Another division for another image with the same information and appropriate attributes. -->
+            <h2>Festiniog, North Wales</h2>
+			<img src="image-two.jpg" alt="White trees with a river." title="Festiniog, North Wales" id="imageTwo">
+			<p>by Samuel Palmer</p>
+		</div> <!-- Closes the division. -->
+		<div class="column"> <!-- Another division for another image with the same information and appropriate attributes. -->
+            <h2>Ocean Waves</h2>
+			<img src="image-three.jpg" alt="Blue ocean waves." title="Ocean Waves" id="imageThree">
+			<p>by Henrik Dønnestad</p>
+		</div> <!-- Closes the division for the container of the three images. -->
+	</div>
+</body>
+</html>

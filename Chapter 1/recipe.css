@@ -1,0 +1,88 @@
+* { /* The '*' is used to set a group of styles to all the elements. */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+:root { /* This is used to set a group of custom properties which can just be called on throughout the stylesheet. In this case it is used to define colors. */
+    --nutmeg: hsl(10, 40%, 39%);
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(12, 100%, 99%);
+    --background: hsl(18, 53%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+body { /* Applies CSS rules to only the body elements. This sets the background image and its settings, font family, line height, and how content is displayed. */
+    background-image: url("recipe-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--dark-charcoal);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.4;
+    display: grid;
+    place-content: center;
+}
+h1, h2 { /* Applies the common CSS rules to the two headers -- <h1> and <h2>. */
+    font-family: 'Young Serif', serif;
+    font-weight: 600;
+}
+h1 { /* Changes the color and font size of only the <h1>.  */
+    color: var(--nutmeg);
+    font-size: 45px;
+}
+h2 { /* Changes the color and adding to the bottom margin. */
+    color: var(--nutmeg);
+    margin-bottom: 7px;
+}
+ul li::marker { /* Sets the style to the <ul> list item marker. */
+    color: var(--nutmeg);
+}
+ul li span { /* Sets the style to the span within <ul> list items. */
+    padding-left: 2px;
+}
+ol { /* Sets the style of the padding to the <ol>. */
+    padding-left: 20px;
+}
+ol li::marker { /* Sets the style to the <ol> list item marker. */
+    color: var(--nutmeg);
+}
+ol li { /* Applies style to the <ol> list items. */
+    margin-bottom: 7px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+ol li span { /* Sets the style to the span within <ol> list items. */
+    padding-left: 8px;
+}
+hr { /* Applies styling to the horizontal rules within the document. */
+    margin: 24px 0;
+    border: 1px solid var(--light-grey);
+}
+.recipe-steps { /* Sets the style to the class 'recipe-steps'. */
+    margin: 32px;
+}
+.container { /* Sets the style to the class 'container'. */
+    max-width: 800px;
+    background-color: var(--white);
+    margin: 32px;
+    border-radius: 16px;
+}
+.container .recipe-description { /* Targets an element within the class 'container' which is 'recipe-description'. */
+    padding: 32px 32px;
+}
+.description { /* Styles the class 'description'. */
+    margin: 0px;
+    text-align: justify;
+}
+.ingredients li { /* Styles the class 'ingredients' list items. */
+    margin-bottom: 7px;
+}
+.ingredients { /* Styles the class 'ingredients'. */
+    background-color: var(--light-pink);
+    padding: 16px 32px;
+    border-radius: 16px;
+}
+.ingredients h3 /* Styles the class 'ingredients' <h3>. */ {
+    margin-bottom: 12px;
+    color: var(--nutmeg);
+}
