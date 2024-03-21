@@ -1,0 +1,54 @@
+body { /* Styles all the elements within the body tag. */
+    font-family: monospace;
+    font-size: 15px;
+    margin: 110px;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+.container { /* Styles the elements that is within the class 'container'. */
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #5d5d5d6f;
+}
+img { /* Styles the images within the file. */
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+}
+h1 { /* Styles the <h1> tags. */
+    text-align: center;
+}
+label { /* Styles all the <label> tags, this one specifically styles the display. */
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="number"], button { /* Styles the <input> tag's button. */
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="number"]:focus, button:focus { /* Styles the <input> tag's button when hovered, as per the task. */
+    border-color: #740000;
+    outline: none;
+    box-shadow: 5px 5px 5px #74000040;
+}
+button { /* Styles the <button> tags. */
+    background-color: #740000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+}
+button:hover { /* Styles the <button> tags when hovered. */
+    background-color: #000000;
+}
+#totalCost { /* Styles the element with the id 'totalCost'. */
+    text-align: center;
+    font-weight: bolder;
+}

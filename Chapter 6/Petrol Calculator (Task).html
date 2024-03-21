@@ -1,0 +1,37 @@
+<!--- Chapter 6 - Petrol Calculator [Task] --->
+
+<!---
+Task:
+Create a simple petrol calculator. Your petrol calculator must include:
+
+- A field for the user the enter the cost of petrol per liter. This should have a default value of 1.72
+- A field for the user to enter the number of liters purchased. This should have a default value of 0
+- A button that when clicked calculates the total cost of the petrol purchased and displays the result to the screen
+- A p tag to display the total cost
+- Comments throughout every file.
+- Buttons should include hover effects, and fields should clearly "focus" when in use.
+- Clean and professional creative styling.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="petrol-calculator.css" type="text/css">
+    <title>Petrol Calculator</title>
+</head>
+<body>
+    <div class="container"> <!-- A division classes as 'container' to contain all the content of the website. -->
+        <img src="petrol.jpg"> <!-- An image displaying a petrol. -->
+        <h1>Petrol Calculator</h1>
+        <label for="petrolCost">Cost of petrol (per liter): </label> <!-- Label and input tags used to get data from the user. -->
+        <input type="number" id="petrolCost" value="1.72" step="0.01" placeholder="Enter cost per liter"> <!-- The input type is defined so that it will only accept numbers. It also has a default value of 1.72. The step defines how the number goes up. The placeholder is what is in the box while the user has not yet input data. -->
+        <label for="litersPurchased">Liters purchased: </label> <!-- Another set of label and input tags. -->
+        <input type="number" id="litersPurchased" value="0" step="0.01" placeholder="Enter liters purchased">
+        <button id="calculateButton">Calculate</button> <!-- A button id that when clicked executes the code in the js. -->
+        <br>
+        <p id="totalCost">Total Cost: $<span id="overallValue">0</span></p> <!-- Where the total cost, when calculated, will go. The span is used to that it dynamically changes the output depending on the user's input. -->
+    </div> <!-- Closes the division tag. -->
+    <script src="petrol-calculator.js"></script> <!-- Links to the javascript file. -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--- Chapter 6 - RGB Color Guessing Game [Bonus] --->
+
+<!---
+Bonus:
+Create an interactive RGB colour guessing game. The game should:
+
+- Present the user with the rgb value they need to guess
+- Present the user with at least three possible colour options including the correct colour.
+- The possible options should be interactive and when clicked inform the user if they were correct or incorrect.
+- The game should continue until they player has run out of lives
+- At the end of the game the user should be presented with a final score and ability to replay the game
+- Include index.html, style.css and index.js files.
+- Include Comments throughout every file.
+- Implement clean and professional creative styling.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rgb-game.css" type="text/css">
+    <title>RGB Color Guessing Game</title>
+</head>
+<body>
+    <div id="container"> <!-- A division tag to contain all the contents of the website. -->
+        <h1>RGB COLOR GUESSING GAME</h1>
+        <div id="colorDisplay"></div> <!-- Another division that updates according to the javascript code. A class is used for easier styling. -->
+        <div id="colorOptions"> <!-- Another div to contain the three color options. -->
+            <!-- The individual color options with an onclick event. -->
+            <div class="colorOption" onclick="checkAnswer(this)"></div> 
+            <div class="colorOption" onclick="checkAnswer(this)"></div>
+            <div class="colorOption" onclick="checkAnswer(this)"></div>
+        </div> <!-- Closes the division. -->
+        <div id="message"></div> <!-- Where the message will be displayed according to what the user clicks. -->
+        <div id="lives">Lives: <span id="livesCount">3</span></div> <!-- Where the lives are displayed, will update dynamically. -->
+        <button id="resetButton" onclick="resetGame()">Play Again</button> <!-- The button that can be clicked to play the game again. -->
+    </div> <!-- Closes the <div> tag. -->
+    <script src="rgb-game.js"></script> <!-- Links the html to the javascript file.-->
+</body>
+</html>

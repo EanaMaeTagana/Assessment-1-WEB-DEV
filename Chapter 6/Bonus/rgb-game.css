@@ -1,0 +1,57 @@
+body { /* Styles all the elements within the body. */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 100px 320px;
+    padding: 0;
+    background-color: #000000;
+}
+#container { /* Styles all the elements within the id 'container'. */
+    margin-top: 130px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+h1 { /* Styles the <h1> tag. */
+    color: #000000;
+    padding-top: 20px;
+}
+#colorDisplay { /* Styles the color that will be displayed dynamically on the screen. */
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 25px;
+    display: inline-block;
+    border: 2px solid #333;
+}
+.colorOption { /* Styles the individual color options that will be displayed dynamically on the screen. */
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+#message { /* Styles the message as it appears on the screen. */
+    margin-top: 20px;
+    font-size: 24px;
+}
+#lives { /* Styles the lives. */
+    margin-top: 10px;
+    font-size: 18spx;
+}
+#resetButton { /* Styles the <button> tag with the id 'resetButton'. */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+#resetButton:hover { /* Styles the <button> tag when hovered with the id 'resetButton'. */
+    background-color: #45a049;
+}
+
