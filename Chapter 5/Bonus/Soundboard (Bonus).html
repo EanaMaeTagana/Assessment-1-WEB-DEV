@@ -1,0 +1,61 @@
+<!--- Chapter 5 - Alan Partridge Soundboard [Bonus] --->
+
+<!---
+Bonus:
+A local comedy radio show needs you to develop an audio soundboard for them. The soundboard will display a grid of Alan Partridge samples. When a sample is clicked the associated audio file will play. The audio samples for this exercise are located in Exercises/Audio Sampler. Your sampler must:
+
+- Include all of the samples in the Audio Sampler directory;
+- Display all samples on a single non-scrolling page;
+- Make use of correct semantic markup;
+- Display the correct sample name;
+- Change the colour of the background, and text, when the user hovers over a sample;
+- Include index.html, style.css and index.js files;
+- Include creative styling for your background, sample buttons, fonts and hover effects;
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="soundboard.css" type="text/css">
+    <title>Alan Partridge Soundboard</title>
+</head>
+<body>
+    <h1>ALAN PARTRIDGE SOUNDBOARD</h1>
+    <div id="container"> <!-- A division classed as 'container' to contain all the content of the soundboard. -->
+        <button class="box" data-audio="ah-ha.mp3"> <!-- A button classed as 'box' so that when pressed can play the data-audio. -->
+            <h2>1</h2>
+            <p>"Ah-ha!"</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="backofthenet.mp3">
+            <h2>2</h2>
+            <p>"Back of the net."</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="bangoutoforder.mp3">
+            <h2>3</h2>
+            <p>"Bang, out of order!"</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="dan.mp3">
+            <h2>4</h2>
+            <p>"Dan!"</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="emailoftheevening.mp3">
+            <h2>5</h2>
+            <p>"E-mail of the evening."</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="hellopartridge.mp3">
+            <h2>6</h2>
+            <p>"Hello, Partridge!"</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="iateascotchegg.mp3">
+            <h2>7</h2>
+            <p>"I ate a scotch egg."</p>
+        </button> <!-- Closes the <button> tag. -->
+        <button class="box" data-audio="imconfused.mp3">
+            <h2>8</h2>
+            <p>"I'm confused."</p>
+        </button> <!-- Closes the <button> tag. -->
+    </div> <!-- Closes the <div> tag. -->
+    <script src="soundboard.js"></script> <!-- Links the javascript to the html file. -->
+</body>
+</html>

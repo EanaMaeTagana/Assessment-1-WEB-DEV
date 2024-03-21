@@ -1,0 +1,40 @@
+body { /* Adds style to all the elements within the body. */
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 { /* Adds style to the <h1> tag. */
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 1050px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+#container { /* Adds style to the id 'container'. */
+    display: grid; /* Changes the display style to grid. */
+    grid-template-columns: repeat(3, 350px); /* Defines the columns of the grids. */
+    grid-template-rows: repeat(3, 150px); /* Defines the rows of the grids. */
+    grid-gap: 50px 20px;
+    justify-content: center;
+}
+.box { /* Adds style to the class 'box'. */
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box p { /* Styles the <p> tag within the class 'box'. */
+    font-size: 20px;
+    font-style: italic;
+}
+button:hover { /* Styles the <button> tag when hovered. */
+    background-color: #5288B2;
+    color: #FFFFFF;
+    font-weight: bolder;
+}

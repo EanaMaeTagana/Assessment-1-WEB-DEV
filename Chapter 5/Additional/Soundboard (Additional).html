@@ -1,0 +1,144 @@
+<!--- Chapter 5 - Alan Partridge Soundboard [Bonus + Additional] --->
+
+<!---
+Bonus:
+The radio show loved the sampler you made for them before, but they'd like to give a more advanced system a go. In a new directory, build on top of your previous sampler and include the following new ideas:
+
+- The show would like to include a text to speech feature. This feature allows presenters to type any text they like into a <textarea> element and have it converted to audio which then plays immediately. This new feature should be displayed in a seperate column next to the audio samples;
+- The show would like to include more audio samples. However, they only want sampler to display nine samples at a time. Create a system whereby the team can use "left" and "right" arrows to scroll through an extended bank of samples. The team is open to your creative ideas as to what audio is included on these new pages. When the first page is displayed, the "left arrow" should be hidden, and when the last page is displayed the "right" arrow should be hidden (prevents users from scrolling to blank sample pages or encountering errors);
+- The team would like the length of the sample in seconds to be dynamically displayed underneath the sample title.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="soundboard-additional.css" type="text/css">
+    <title>Alan Partridge Soundboard</title>
+</head>
+<body>
+    <div id="container">
+        <div id="textToSpeech"> <!-- A new division is added to input the text to speech. -->
+            <textarea type="text" id="text-to-speech" placeholder="Type here"></textarea> <!-- A <textarea> is used to allow input from the user. An id is also used for easier styling. The placeholder is what appears within the box. -->
+            <br> <!-- A breakrule to separate the button from the textarea. -->
+            <button type="button" onclick="textToAudio()">Say it</button> <!-- A <button> which has an onclick function. -->
+        </div>
+        <div id="soundboard">
+            <h1>ALAN PARTRIDGE SOUNDBOARD</h1>
+            <div id="soundContainer">
+                <button class="box" data-audio="ah-ha.mp3">
+                    <h2>1</h2>
+                    <p>"Ah-ha!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="backofthenet.mp3">
+                    <h2>2</h2>
+                    <p>"Back of the net."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="bangoutoforder.mp3">
+                    <h2>3</h2>
+                    <p>"Bang, out of order!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="dan.mp3">
+                    <h2>4</h2>
+                    <p>"Dan!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="emailoftheevening.mp3">
+                    <h2>5</h2>
+                    <p>"E-mail of the evening."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="hellopartridge.mp3">
+                    <h2>6</h2>
+                    <p>"Hello, Partridge!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="iateascotchegg.mp3">
+                    <h2>7</h2>
+                    <p>"I ate a scotch egg."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="imconfused.mp3">
+                    <h2>8</h2>
+                    <p>"I'm confused."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="aboot.mp3">
+                    <h2>9</h2>
+                    <p>"Aboot?"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <!-- More audios are added to the soundboard with the same format as the previous soundboard audios. -->
+                <button class="box" data-audio="123.mp3">
+                    <h2>10</h2>
+                    <p>"1,230 to 12."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="anymessages.mp3">
+                    <h2>11</h2>
+                    <p>"Any messages?"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="biggestfan.mp3">
+                    <h2>12</h2>
+                    <p>"Your biggest fan."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="bitofajobforyou.mp3">
+                    <h2>13</h2>
+                    <p>"Bit of a job for you."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="getridofit.mp3">
+                    <h2>14</h2>
+                    <p>"Here, get rid of it."</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="goal.mp3">
+                    <h2>15</h2>
+                    <p>"Goaaaal!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="helloooo.mp3">
+                    <h2>16</h2>
+                    <p>"Helloooo!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="icantbreathe.mp3">
+                    <h2>17</h2>
+                    <p>"I can't breathe!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="moo.mp3">
+                    <h2>18</h2>
+                    <p>"Moo!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="maddest.mp3">
+                    <h2>19</h2>
+                    <p>"Maddest man!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="ohforgetit.mp3">
+                    <h2>20</h2>
+                    <p>"Oh, forget it!"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+                <button class="box" data-audio="whydobirds.mp3">
+                    <h2>21</h2>
+                    <p>"Why do birds~"</p>
+                    <p><span class="duration"></span></p>
+                </button>
+            </div>
+            <div id="pagination"> <!-- Another division to contain the pagination buttons. -->
+                <button class="arrow">&lt;</button> <!-- Another <button> tag to contain the left arrow. -->
+                <button class="arrow">&gt;</button> <!-- Another <button> tag to contain the right arrow. -->
+            </div>
+        </div>
+    </div>
+    <script src="soundboard-additional.js"></script> <!-- Links the html to the new javascript. -->
+</body>
+</html>

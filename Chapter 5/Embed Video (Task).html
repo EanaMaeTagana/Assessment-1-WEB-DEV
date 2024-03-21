@@ -1,0 +1,43 @@
+<!--- Chapter 5 - Embed Video [Task] --->
+
+<!---
+Task:
+Embed a locally hosted video of your choice into a html document. The video must:
+
+- Loop;
+- Display a relevant poster image;
+- Be centred on the page horizontally and vertically.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy On Film</title>
+</head>
+<!-- Due to the fact that the task uses minimal styling, this task uses internal styling rather than using an external stylesheet. -->
+<style>
+body { /* Styles all the elemenets within the body tag. */
+    background-image: url("background.jpg"); /* Adds a background image. */
+    background-repeat: no-repeat; /* Makes it so that the background image does not repeat. */
+    background-size: cover; /* Changes the size of the background image. */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Aligns the content to the center of the page. */
+    align-items: center;
+}
+video { /* Styles the video element. */ 
+    max-width: 100%;
+    max-height: 100%;
+}
+</style> <!-- Closes the internal stylesheet. -->
+<body>
+    <div> <!-- A division to contain the contents. -->
+        <!-- The video is looped by the loop function. Then, the width and height are defined. A poster is added so that when the video is not playing, it will display the image. -->
+        <video loop width="765.5" height="440" poster="italy-film-poster.jpg" controls>
+            <source src="italy-film.mov" type="video/mp4"/> <!-- The source of the video within the directory. -->
+        </video> <!-- Closes the <video> tag. -->
+    </div> <!-- Closes the division containing the contents. -->
+</body>
+</html>
