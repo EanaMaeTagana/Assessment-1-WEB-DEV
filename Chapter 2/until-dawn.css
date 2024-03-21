@@ -1,0 +1,89 @@
+body { /* Styles applied to the whole body. */
+    font-family: Arial, sans-serif;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    color: white;
+    background-color: black;
+}
+h2 { /* Defines the style for <h2>. */
+    color: crimson;
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container { /* Defines the style for the class 'container'. */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+}
+.header { /* Applies the style for the class 'header'. */
+    background-color: black;
+    padding: 50px 35px 0px 25px;
+    text-align: center;
+}
+.title { /* Applies a different style to the font of the title. */
+    font-size: 55px; 
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header a { /* Applies style to the href links. */
+    color: crimson;
+    text-decoration: none;
+    padding: 15px;
+}
+.navigation { /* Applies style to the navigation bar. */
+    padding-top: 10px;
+}
+.navigation ul { /* Applies style to the navigation's ul, which are the navigation sections. */
+    padding: 0px;
+    margin: 0px;
+}
+.navigation li { /* Changes the display of the nav bar that it will display side by side. */
+    display: inline;
+}
+.navigation a { /* Adds style to the links within the navigation bar. */
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navigation a:hover { /* Adds style to the links when hovered on. */
+    color: crimson;
+}
+.about { /* Applies the style for the class 'about'. */
+    padding: 10px 50px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    color: black;
+}
+.plot, .characters p { /* Changes the line height for the classes 'plot' and 'characters'. */
+    line-height: 30px;
+}
+.characters strong { /* Applies the style to the <strong> tags. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px; 
+}
+.quote { /* Applies the style for the class 'quotes'. */
+    text-align: right;
+    font-style: italic;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 10px;
+    color: black;
+}
+.button { /* Applies style to the href link which is styled like a button, explaining the pointer style. */
+    display: block;
+    margin: 50px auto;
+    padding: 8px 16px; 
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px; 
+    width: 120px; 
+    cursor: pointer;
+}

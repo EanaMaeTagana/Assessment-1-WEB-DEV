@@ -1,0 +1,61 @@
+<!-- Chapter 2 - Multiple-Page Website [Bonus] -->
+
+<!--
+Bonus:
+Using the one-page website you created, clone it into a new directory and split the information down into a simple multi-page website.
+
+- An individual page for: plot, key information, cast and/or creative team, characters and any reviews you can find.
+- Put your new pages in a subdirectory called "pages".
+- Ensure that each page has a navigation bar.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="until-dawn.css" type="text/css"> <!-- Keeps the same stylesheet of the original task. -->
+    <title>Reviews</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Instead of using ids, like in the task, links to new html files are used within the navigation bar. -->
+        <a href="Plot.html" class="title">UNTIL DAWN</a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="Plot.html">Plot</a></li>
+                <li><a href="Characters.html">Characters</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="reviews" id="reviews">
+            <h2>REVIEWS</h2>
+            <div class="review">
+                <p>
+                <strong>★★★★★ Tom Ruess</strong>: I enjoyed this game far more than I expected to! It’s very addictive and once I started I pretty much couldn’t put it down until I was done my first play through. I liked it so much I even rushed to the store after finishing to pick up ‘The Quarry’ for PS5 (this game’s sequel). 
+                </p>       
+            </div>
+            <hr>
+            <div class="review">
+                <p>
+                <strong>★★★★★ Izzy Gardener</strong>: I played this earlier this year and still love it, I love that the different choices affect minor steps in the game as you have to think twice! I chose what I would of chose in the first game and saw what would happen and then played again trying the opposite, it’s so fun there’s so many endings and you can change so much! This game is super addicting seriously I’ve played it so many times now! I definitely recommend it to anyone who likes a spooky but fun and funny game. 
+                </p>       
+            </div>
+            <hr>
+            <div class="review">
+                <p>
+                <strong>★★★★★ Yves Roschlenova</strong>: Love story driven games, love horror, and absolutely love this game. It's like the choose your own adventure books I loved as a kid, manifested into a survival horror game that plays like an interactive movie. Outstanding. Have also played the first installment of The Dark Pictures Anthology, Man of Medan, will definitely be getting any and all games these guys release like this
+                </p>       
+            </div>
+            <hr>
+            <div class="review">
+                <p>
+                <strong>★★★★★ Laura Brearley</strong>: This game is so visually beautiful, has dynamic characters, and a fantastic story line. It is a truly amazing concept, which becomes more layered and complex each time I play. I highly recommend it.
+                </p>       
+            </div>
+        </div>
+        <a href="https://store.steampowered.com/app/2172010/Until_Dawn/" class="button">Buy on Steam</a>
+    </div>
+</body>
+</html>
