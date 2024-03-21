@@ -1,0 +1,61 @@
+<!--- Chapter 1 - Recipe [Task] --->
+
+<!---
+Task:
+Create a web page containing information on your favourite recipe. The page should include
+
+- Appropriate tags to structure text (e.g. h and p tags).
+- A h1 tag for the recipe name
+- A p tag for a description of the recipe
+- A h2 tag for the ingredients
+- An unorder list for the ingredients
+- An h2 tag for the method
+- An order list for the steps involved in the recipe 'method'
+- Make sure the code is indented and spaced properly.
+- Add comments explaining what each element does.   
+--->
+<!DOCTYPE html>
+<html lang="en"> <!-- Contains all HTML elements of a document. It also indicates the start of an HTML document. -->
+<head> <!-- Contains the metadata of the document. This information will not be shown on the webpage. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="recipe.css"type="text/css"> <!-- Links to the external stylesheet which designs the page. -->
+    <title>Tuna Pasta</title> <!-- Shown in the webpage's title bar and represents the name of the page. -->
+</head>
+<body> <!-- Presents the main content of an HTML webpage. -->
+    <div class="container"> <!-- Divs are used to define a division. This one is followed by a class ("container") in order to apply CSS properties to a group of elements. -->
+        <div class="recipe-description"> <!-- Another div and class to contain the contents. -->
+            <h1>15-Minute Tuna Pasta</h1> <!-- Used to show a section's heading. This is the largest of 6 sizes. -->
+            <p class="description">Looking for a speedy meal solution? Canned tuna and pasta has long been my reliable choice when hunger strikes unexpectedly. This dish is straightforward, quick to prepare, and requires just 15 minutes of your time.</p> <!-- A paragraph tag to show a block of text. Also contains a class for the stylesheet. -->
+            <div class="recipe-steps">
+            <hr> <!-- To create a horizontal rule and break within the webpage. -->
+                <h2>What you will need</h2> <!-- Used to show a section's heading. The second largest of 6 sizes. -->
+                <ul class="ingredients"> <!-- Shows a list in an unordered manner. -->
+                    <h3>Ingredients</h3> <!-- Used to show a section's heading. The third largest of 6 sizes. -->
+                    <!-- The li element is used to contain the items of any list. It is essential that it is contained within a parent list. -->
+                    <li><span>Pasta (can be preferred choice of pasta)</span></li> <!-- The span is used to define a part of a text. -->
+                    <li><span>Oil (can be preferred choice of oil)</span></li>
+                    <li><span>Garlic</span></li>
+                    <li><span>Canned Tuna</span></li>
+                    <li><span>Lemon Juice</span></li>
+                    <li><span>Parsley</span></li>
+                    <li><span>Salt and pepper to taste</span></li> <!-- The span tag is used contain a certain part of a text. -->
+                </ul>
+            <hr> <!-- Horizontal rules which separate the contents from each other. -->
+            </div> <!-- Tag which closes the division. -->
+            <div class="recipe-steps"> <!-- A tag is used to define the class of the div. -->
+                <h2>How to make tuna pasta</h2>
+                <ol> <!-- Shows a list in an ordered manner. -->
+                    <li><span>Begin by bringing a pot of water to a boil and cooking the pasta until it reaches al dente texture, following the instructions on the package.</span></li>
+                    <li><span>While the pasta is cooking, heat a tablespoon of oil in a large skillet over medium heat.</span></li>
+                    <li><span>Once the oil is hot, add two cloves of minced garlic and sauté for about 30 seconds until fragrant, being careful not to let it burn.</span></li>
+                    <li><span>Next, stir in a can of drained tuna, the juice of one lemon, and a handful of freshly chopped parsley. Allow the flavors to meld together for a couple of minutes, stirring occasionally.</span></li>
+                    <li><span>When the pasta is done cooking, drain it well and add it to the skillet with the tuna mixture. Toss everything together until the pasta is well coated in the sauce.</span></li>
+                    <li><span>Season the dish generously with salt and pepper, adjusting to taste as needed. You can also add a pinch of red pepper flakes for a hint of heat if desired.</span></li>
+                    <li><span>Serve your delicious tuna and pasta dish hot, garnished with additional parsley or grated Parmesan cheese if desired. Enjoy your quick and satisfying meal!</span></li>
+                </ol>
+            </div> <!-- Closes a group of division tags. -->
+        </div>
+    </div>
+</body> <!-- Closes the tag for the content of the page. -->
+</html> <!-- Closes the HTML document. -->
