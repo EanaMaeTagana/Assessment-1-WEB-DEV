@@ -1,0 +1,92 @@
+<!--- Chapter 4 - Study Planner [Bonus] --->
+
+<!---
+Bonus:
+Imagine you have been employed to build a single-page web application that manages a study plan for the Web Development module on the Creative Computing course. Use HTML and CSS to mock-up what this application would look like, without adding any interactivity. You must include:
+
+- Wireframe (add image to the directory);
+- Header, Navigation menu, main content and a footer;
+- The main content must be split into two or three columns;
+- Five demo items;
+- Your HTML should use semantically correct elements;
+- An external style.css file;
+- The use of at least one button;
+- The page does not need to be interactive;
+- You should focus on the structure and visual layout of the page, but also consider design too;
+- Commenting throughout.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="study-planner.css">
+</head>
+<body>
+    <header id="header"> <!-- A header to contain the navigation and title of the website. -->
+        <h1>WEB DEVELOPMENT</h1> <!-- The title of the website using the <h1> tag. -->
+        <nav> <!-- A <nav> tag to contain the navigation locations within the website. -->
+            <ul> <!-- An unordered list to contain the href links. -->
+                <li><a href="#header">Home</a></li> <!-- A group of list items which can be linked to locations within the website. -->
+                <li><a href="#introduction">About</a></li>
+                <li><a href="#submission">Submissions</a></li>
+            </ul> <!-- Closes the <ul> tag. -->
+        </nav> <!-- Closes the <nav> tag. -->
+    </header> <!-- Closes the <header> tag. -->
+    <div class="container"> <!-- A division classed as 'container' to contain all the contents for easier styling. -->
+        <section class="introduction" id="introduction"> <!-- A section classed as 'introduction' and id 'introduction' to contain all the contents of the introduction for easier styling. -->
+            <p>Web development is the process of creating and maintaining websites and web applications. It involves a diverse set of skills, tools, and technologies to build dynamic and interactive online experiences.</p>
+            <p>In this 10-week journey, you'll explore web development from the ground up, mastering HTML, CSS, and JavaScript to create captivating websites and web applications. From basic concepts to advanced techniques, you'll gain the skills and confidence to bring your creative visions to life on the web.</p>
+            <button>Learn More</button> <!-- A <button> tag that can be used to bring to other content on the website. -->
+        </section> <!-- Closes the <section> tag. -->
+        <main> <!-- Start of the main content of the website using the <main> tag. -->
+            <section class="content"> <!-- Another section to contain the different contents. -->
+                <h2>Study Plan</h2>
+                <article class="item"> <!-- An <article> tag to contain one article of many. Classed as an 'item' for easier styling. -->
+                    <h3>CHAPTER 1: Introduction to HTML</h3>
+                    <p>Learn the basics of HTML, including its structure and fundamental tags. Create simple web pages and understand how to add links, images, and forms.</p>
+                </article> <!-- Closes an <article> tag. -->
+                <article class="item">
+                    <h3>CHAPTER 2: Basic CSS Styling</h3>
+                    <p>Dive into Cascading Style Sheets (CSS) to style HTML elements. Explore basic styling techniques such as changing fonts, colors, and backgrounds.</p>
+                </article> <!-- Closes an <article> tag. -->
+                <article class="item">
+                    <h3>CHAPTER 3: Intermediate CSS and Responsive Design</h3>
+                    <p>Explore intermediate CSS concepts including the box model, positioning, and flexbox layout. Learn how to create responsive layouts that adapt to different screen sizes.</p>
+                </article> <!-- Closes an <article> tag. -->
+                <article class="item">
+                    <h3>CHAPTER 4: Introduction to JavaScript</h3>
+                    <p>Begin your journey into JavaScript, the programming language of the web. Learn about variables, data types, control flow, and basic DOM manipulation.</p>
+                </article> <!-- Closes an <article> tag. -->
+                <article class="item">
+                    <h3>CHAPTER 5: Advanced JavaScript and Project Work</h3>
+                    <p>JavaScript with advanced topics such as arrays, objects, ES6 features, and asynchronous programming. Work on a project to apply your newfound skills in building interactive web applications.</p>
+                </article> <!-- Closes an <article> tag. -->
+            </section> <!-- Closes the <section> tag. -->
+            <aside> <!-- Start of the <aside> tag which contains content beside the main content. -->
+                <section class="aside"> <!-- A section classed as 'aside' to contain the contents. -->
+                    <h2>Additional Resources</h2>
+                    <ul> <!-- An unordered list to contain list items. -->
+                        <li>HTML Tutorial</li>
+                        <li>CSS Basics</li>
+                        <li>JavaScript Handbook</li>
+                    </ul> <!-- Closes the <ul> tag. -->
+                </section> <!-- Closes the <section> tag. -->
+                <section class="aside" id="submission"> <!-- Another section classed as 'aside' to contain the contents. -->
+                    <h2>Submissions</h2>
+                    <ul> <!-- Another unordered list to contain list items. -->
+                        <li>Assignment (Week 1-2)</li>
+                        <li>Assignment (Week 3-4)</li>
+                        <li>Assignment (Week 4-5)</li>
+                    </ul> <!-- Closes the <ul> tag. -->
+                </section> <!-- Closes the <section> tag. -->
+            </aside> <!-- Closes the <aside> tag. -->
+        </main> <!-- Closes the <main> tag. -->
+    </div> <!-- Closes the division 'container'. -->
+    <footer> <!-- The <footer> tag which contains the content at the end of the website. -->
+        <p>© Creative Computing, Web Development</p>
+    </footer> <!-- Closes the <footer> tag. -->
+</body>
+</html>
+

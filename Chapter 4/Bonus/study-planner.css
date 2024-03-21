@@ -1,0 +1,99 @@
+* { /* Applies styling to all elements of the website. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { /* Applies styling to only the body elements of the website. */
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+header { /* Applies styling to only the elements within the header of the website. */
+    background-color: #002d5d;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+header nav ul { /* Styles the <ul> within the navigation's header. */
+    list-style-type: none;
+    margin-top: 15px;
+}
+header nav ul li { /* Styles the <ul> list items within the navigation's header. */
+    display: inline;
+    margin-right: 20px;
+}
+header nav ul li a { /* Styles the href links within <ul> list items. */
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+header nav ul li a:hover { /* Styles the href links when hovered within <ul> list items. */
+    color: #fff;
+    font-weight: normal;
+    text-decoration: underline;
+}
+main { /* Styles the elements within the <main> tag. */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+h2 { /* Styles the <h2> tag. */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button { /* Styles the <button> tag, adds a pointer that when hovered changes the cursor. */
+    background-color: #00356d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover { /* Styles the <button> tag which changes when hovered on. */
+    background-color: #00264e;
+}
+.introduction { /* Styles the elements within the class 'introduction. */
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.introduction p { /* Styles the <p> tags within the class 'introduction. */
+    margin-bottom: 10px;
+    line-height: 25px;
+    text-align: justify;
+}
+.container { /* Styles the elements within the class 'container. */
+    padding: 20px 150px;
+}
+.content { /* Styles the elements within the class 'content. */
+    flex: 1;
+    padding-right: 10px;
+}
+.item { /* Styles the elements within the class 'item. */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+}
+.aside { /* Styles the elements within the class 'aside. */
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.aside ul { /* Styles the <ul> tag within the class 'aside. */
+    list-style-type: none;
+    margin-top: 10px;
+}
+.aside ul li { /* Styles the <ul> list items within the class 'aside. */
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: underline; 
+}
+footer { /* Styles the elements within the <footer> tag. */
+    background-color: #002d5d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

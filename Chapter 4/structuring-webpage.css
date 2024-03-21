@@ -1,0 +1,74 @@
+body { /* Applies style to all body elements. */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 20px;
+}
+h1, h2 { /* Applies the common styles to the <h1> and <h2> texts. */
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration: underline;
+}
+h1 { /* Applies style to only the <h1> tag. */
+    margin-top: 0px;
+    font-size: 35px;
+}
+.header { /* Applies style to the class 'header', or the <header> tag. */
+    background-color: #17072b;
+    color: #FFFFFF;
+    padding: 25px;
+    text-align: center;
+}
+.navigation ul { /* Applies style to the <ul> within the 'navigation' class. */
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li { /* Applies style to the <ul> list items within the 'navigation' class. */
+    display: inline;
+    margin: 0 10px;
+}
+.navigation a { /* Applies style to the href links within the 'navigation' class. */
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navigation a:hover { /* Applies style to the href links when hovered on within the 'navigation' class. */
+    text-decoration: underline;
+}
+.container { /* Applies style to the 'container' class, styling the display and justification of the content. */
+    display: flex;
+    justify-content: space-between;
+    height: 540px;
+}
+.main { /* Applies style to the 'main' class (or the <main> tag), changing the flex settings. */
+    flex: 1;
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 30px;
+}
+.main img { /* Applies style to the images within the 'main' class. */
+    max-height: 335px;
+    width: 100%;
+}
+.aside { /* Applies style to the 'aside' class, or the <aside> tag. */
+    width: 350px;
+    background-color: #172d67;
+    color: #FFFFFF;
+    padding: 60px;
+    margin: 10px 0;
+    line-height: 35px;
+}
+.aside h2 { /* Applies style to the <h2> tag within the 'aside' class. */
+    color: #FFFFFF;
+}
+.aside img { /* Applies style to the images within the 'aside' class. */
+    height: 160px;
+    width: 160px;
+    padding: 5px;
+}
+.footer { /* Applies style to the 'footer' class, or the <footer> tag. */
+    background-color: #8c15e9;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
